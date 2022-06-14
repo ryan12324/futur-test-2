@@ -32,7 +32,7 @@ final class AppCodes
         try {
             $this->appCodes = parse_ini_file(realpath(dirname($_SERVER['PHP_SELF']) . '/parser_test/appCodes.ini'));
         } catch(\Exception $e) {
-            throw new \Exception("Unable to parse appCodes.ini",0 $e);
+            throw new \Exception("Unable to parse appCodes.ini", 0, $e);
         }
     }
 
